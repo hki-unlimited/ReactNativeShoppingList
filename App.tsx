@@ -7,14 +7,14 @@ import ListItem from './components/ListItem';
 import AddItem from './components/AddItem';
 
 const App = () => {
-  const [items, setItems] = useState([
+  const [items, setItems] = useState<ShoppingListItem[]>([
     { id: uuid.v4(), text: 'Maitoa' },
     { id: uuid.v4(), text: 'Juustoa' },
     { id: uuid.v4(), text: 'Leipää' },
     { id: uuid.v4(), text: 'Voita' }
   ]);
 
-  const deleteItem = (itemToDelete: any) => {
+  const deleteItem = (itemToDelete: ShoppingListItem) => {
     setItems(prevItems => {
       return prevItems.filter(item => item.id !== itemToDelete.id);
     });

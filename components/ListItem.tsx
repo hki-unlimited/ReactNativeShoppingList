@@ -3,8 +3,8 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
 interface Props {
-    item: any;
-    deleteItem: any;
+    item: ShoppingListItem;
+    deleteItem: (itemToDelete: ShoppingListItem) => void;
 }
 
 const ListItem: React.FC<Props> = ({item, deleteItem}) => {

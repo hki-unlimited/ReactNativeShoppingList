@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-nativ
 import { Ionicons } from '@expo/vector-icons';
 
 interface Props {
-    addItem: any;
+    addItem: (text: string) => void;
 }
 
 const AddItem: React.FC<Props> = ({ addItem }) => {
