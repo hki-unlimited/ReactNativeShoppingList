@@ -8,5 +8,4 @@ expo start
 
 # Starting the app with React Native CLI
 
-react-native run-ios
-react-native run-android
+react-native run-ios OR react-native run-android
